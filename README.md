@@ -12,23 +12,23 @@ To configure your Maven project to use these POMs, copy the respective configura
 
 ### Java 8
 
-    ```xml
+```xml
     <parent>
         <groupId>com.microsoft</groupId>
         <artifactId>maven-java-parent</artifactId>
         <version>8.0.0-SNAPSHOT</version>
     </parent>
-    ```
+```
 
 ### Java 11
 
-    ```xml
+```xml
     <parent>
         <groupId>com.microsoft</groupId>
         <artifactId>maven-java-parent</artifactId>
         <version>11.0.0-SNAPSHOT</version>
     </parent>
-    ```
+```
 
 # Contributing
 
