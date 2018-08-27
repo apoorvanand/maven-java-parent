@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.microsoft</groupId>
+    <artifactId>maven-java-parent-bom</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Maven BOM for Microsoft Java Projects</name>
+    <description>Maven Parents for Microsoft Java Projects</description>
+    <url>https://github.com/microsoft/maven-java-parent</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:https://github.com/microsoft/maven-java-parent</connection>
+        <developerConnection>scm:git:git@github.com:microsoft/maven-java-parent</developerConnection>
+        <url>https://github.com/microsoft/maven-java-parent</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>brborges</id>
+            <name>Bruno Borges</name>
+            <email>bruno.borges@microsoft.com</email>
+        </developer>
+        <developer>
+            <id>jogiles</id>
+            <name>Jonathan Giles</name>
+            <email>jonathan.giles@microsoft.com</email>
+        </developer>
+    </developers>
+
+    <modules>
+        <module>build-tools</module>
+        <module>java-8-parent</module>
+        <module>java-11-parent</module>
+    </modules>
+</project>
