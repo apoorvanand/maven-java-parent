@@ -10,6 +10,22 @@
     <description>Maven Parents for Microsoft Java Projects</description>
     <url>https://github.com/microsoft/maven-java-parent</url>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Maven tool versions -->
+        <maven-compiler.version>3.8.0</maven-compiler.version>
+        <maven-source.version>3.0.1</maven-source.version>
+        <maven-javadoc.version>3.0.1</maven-javadoc.version>
+        <maven-surefire.version>2.22.0</maven-surefire.version>
+        <maven-exec.version>1.6.0</maven-exec.version>
+        <maven-assembly.version>3.1.0</maven-assembly.version>
+        <maven-eclipse.version>2.10</maven-eclipse.version>
+        <maven-checkstyle.version>3.0.0</maven-checkstyle.version>
+        <maven-findbugs.version>3.0.5</maven-findbugs.version> <!-- TODO replace with spotbugs -->
+        <maven-build-tools.version>1.0.0-SNAPSHOT</maven-build-tools.version>
+    </properties>
+
     <licenses>
         <license>
             <name>MIT License</name>
