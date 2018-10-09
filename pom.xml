@@ -22,7 +22,7 @@
         <maven-assembly.version>3.1.0</maven-assembly.version>
         <maven-eclipse.version>2.10</maven-eclipse.version>
         <maven-checkstyle.version>3.0.0</maven-checkstyle.version>
-        <maven-findbugs.version>3.0.5</maven-findbugs.version> <!-- TODO replace with spotbugs -->
+        <maven-spotbugs.version>3.1.6</maven-spotbugs.version>
         <maven-build-tools.version>1.0.0-SNAPSHOT</maven-build-tools.version>
     </properties>
 
