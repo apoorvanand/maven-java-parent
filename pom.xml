@@ -2,8 +2,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.microsoft</groupId>
-    <artifactId>maven-java-parent-bom</artifactId>
+    <groupId>com.microsoft.maven</groupId>
+    <artifactId>java-parent-bom</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Maven BOM for Microsoft Java Projects</name>
@@ -21,6 +21,8 @@
         <maven-exec.version>1.6.0</maven-exec.version>
         <maven-assembly.version>3.1.0</maven-assembly.version>
         <maven-eclipse.version>2.10</maven-eclipse.version>
+        <maven-gpg.version>1.6</maven-gpg.version>
+        <maven-nexus-staging.version>1.6.8</maven-nexus-staging.version>
         <maven-checkstyle.version>3.0.0</maven-checkstyle.version>
         <maven-spotbugs.version>3.1.6</maven-spotbugs.version>
         <maven-build-tools.version>1.0.0-SNAPSHOT</maven-build-tools.version>
@@ -33,6 +35,24 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <issueManagement>
+        <url>https://github.com/Microsoft/maven-java-parent/issues</url>
+        <system>GitHub Issues</system>
+    </issueManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus-staging</id>
+            <name>Nexus Staging Repository</name>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>Nexus Snapshot Repository</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <scm>
         <connection>scm:git:https://github.com/microsoft/maven-java-parent</connection>
@@ -59,4 +79,34 @@
         <module>java-8-parent</module>
         <module>java-11-parent</module>
     </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>${maven-gpg.version}</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>${maven-nexus-staging.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>nexus-snapshots</serverId>
+                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

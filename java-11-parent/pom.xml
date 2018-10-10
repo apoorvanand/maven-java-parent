@@ -2,8 +2,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.microsoft</groupId>
-    <artifactId>maven-java-11-parent</artifactId>
+    <groupId>com.microsoft.maven</groupId>
+    <artifactId>java-11-parent</artifactId>
     <version>11.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Maven Parent for Java 11</name>
@@ -11,8 +11,8 @@
     <url>https://github.com/microsoft/maven-java-parent</url>
 
     <parent>
-        <groupId>com.microsoft</groupId>
-        <artifactId>maven-java-parent-bom</artifactId>
+        <groupId>com.microsoft.maven</groupId>
+        <artifactId>java-parent-bom</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
