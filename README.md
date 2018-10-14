@@ -14,8 +14,8 @@ To configure your Maven project to use these POMs, copy the respective configura
 
 ```xml
     <parent>
-        <groupId>com.microsoft</groupId>
-        <artifactId>maven-java-8-parent</artifactId>
+        <groupId>com.microsoft.maven</groupId>
+        <artifactId>java-8-parent</artifactId>
         <version>8.0.0-SNAPSHOT</version>
     </parent>
 ```
@@ -24,11 +24,15 @@ To configure your Maven project to use these POMs, copy the respective configura
 
 ```xml
     <parent>
-        <groupId>com.microsoft</groupId>
-        <artifactId>maven-java-11-parent</artifactId>
+        <groupId>com.microsoft.maven</groupId>
+        <artifactId>java-11-parent</artifactId>
         <version>11.0.0-SNAPSHOT</version>
     </parent>
 ```
+
+# Frequently-Asked Questions
+
+A collection of frequently-asked questions is [available for review](FAQ.md).
 
 # Contributing
 
