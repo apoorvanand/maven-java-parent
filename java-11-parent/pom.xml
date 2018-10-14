@@ -36,8 +36,8 @@
                 <version>${maven-checkstyle.version}</version>
                 <dependencies>
                     <dependency>
-                        <groupId>com.microsoft</groupId>
-                        <artifactId>maven-build-tools</artifactId>
+                        <groupId>com.microsoft.maven</groupId>
+                        <artifactId>build-tools</artifactId>
                         <version>${maven-build-tools.version}</version>
                     </dependency>
                 </dependencies>
@@ -67,8 +67,8 @@
                 <version>${maven-spotbugs.version}</version>
                 <dependencies>
                     <dependency>
-                        <groupId>com.microsoft</groupId>
-                        <artifactId>maven-build-tools</artifactId>
+                        <groupId>com.microsoft.maven</groupId>
+                        <artifactId>build-tools</artifactId>
                         <version>${maven-build-tools.version}</version>
                     </dependency>
                 </dependencies>

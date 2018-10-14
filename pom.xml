@@ -54,6 +54,21 @@
         </snapshotRepository>
     </distributionManagement>
 
+    <!-- For CheckStyle / SpotBugs plugin to download build-tools jar file -->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
     <scm>
         <connection>scm:git:https://github.com/microsoft/maven-java-parent</connection>
         <developerConnection>scm:git:git@github.com:microsoft/maven-java-parent</developerConnection>
