@@ -19,7 +19,7 @@
         <maven-javadoc.version>3.0.1</maven-javadoc.version>
         <maven-surefire.version>2.22.1</maven-surefire.version>
         <maven-exec.version>1.6.0</maven-exec.version>
-        <maven-assembly.version>3.1.0</maven-assembly.version>
+        <maven-assembly.version>3.1.1</maven-assembly.version>
         <maven-eclipse.version>2.10</maven-eclipse.version>
         <maven-gpg.version>1.6</maven-gpg.version>
         <maven-nexus-staging.version>1.6.8</maven-nexus-staging.version>
