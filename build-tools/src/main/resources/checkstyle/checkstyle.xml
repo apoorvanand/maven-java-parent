@@ -11,11 +11,12 @@ page at http://checkstyle.sourceforge.net/config.html -->
 <module name="Checker">
 
     <module name="SuppressionFilter">
-        <property name="file" value="${checkstyle.suppressions.file}"/>
+        <property name="file" value="${samedir}/checkstyle-suppressions.xml"/>
+        <property name="optional" value="true"/>
     </module>
-
+    
     <module name="Header">
-        <property name="headerFile" value="${checkstyle.header.file}"/>
+        <property name="header" value="/**\n * Copyright (c) Microsoft Corporation. All rights reserved.\n * Licensed under the MIT License. See License.txt in the project root for\n * license information.\n"/>
         <property name="fileExtensions" value="java"/>
     </module>
 
