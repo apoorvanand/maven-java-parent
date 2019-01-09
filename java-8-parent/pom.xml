@@ -4,7 +4,7 @@
 
     <groupId>com.microsoft.maven</groupId>
     <artifactId>java-8-parent</artifactId>
-    <version>8.0.0-SNAPSHOT</version>
+    <version>8.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Maven Parent for Java 8</name>
     <description>Maven Parent for Java 8</description>
@@ -13,7 +13,8 @@
     <parent>
         <groupId>com.microsoft.maven</groupId>
         <artifactId>java-parent-bom</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <licenses>

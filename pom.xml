@@ -4,7 +4,7 @@
 
     <groupId>com.microsoft.maven</groupId>
     <artifactId>java-parent-bom</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Maven BOM for Microsoft Java Projects</name>
     <description>Maven Parents for Microsoft Java Projects</description>
@@ -25,7 +25,7 @@
         <maven-nexus-staging.version>1.6.8</maven-nexus-staging.version>
         <maven-checkstyle.version>3.0.0</maven-checkstyle.version>
         <maven-spotbugs.version>3.1.6</maven-spotbugs.version>
-        <maven-build-tools.version>1.0.0-SNAPSHOT</maven-build-tools.version>
+        <maven-build-tools.version>1.0.1-SNAPSHOT</maven-build-tools.version>
     </properties>
 
     <licenses>
@@ -78,21 +78,14 @@
 
     <developers>
         <developer>
-            <id>brborges</id>
-            <name>Bruno Borges</name>
-            <email>bruno.borges@microsoft.com</email>
-        </developer>
-        <developer>
-            <id>jogiles</id>
-            <name>Jonathan Giles</name>
-            <email>jonathan.giles@microsoft.com</email>
+            <id>microsoft</id>
+            <organization>Microsoft Corporation</organization>
         </developer>
     </developers>
 
     <modules>
         <module>build-tools</module>
         <module>java-8-parent</module>
-        <module>java-11-parent</module>
     </modules>
 
     <build>

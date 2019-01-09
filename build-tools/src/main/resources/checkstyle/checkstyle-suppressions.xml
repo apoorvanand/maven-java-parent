@@ -4,5 +4,9 @@
     "http://www.puppycrawl.com/dtds/suppressions_1_0.dtd">
 
 <suppressions>
-  <suppress files="HelpMojo.java" checks="[a-zA-Z0-9]*"/>
+  <suppress checks="Javadoc" files="Test[s]?.*\.java"/>
+  <suppress checks="Javadoc" files=".*Test[s]?\.java"/>
+  <suppress checks="Javadoc" files=".*Test[s]?Base\.java"/>
+  <suppress checks="Javadoc" files=".*CoverageReporter\.java"/>
+  <suppress checks="Header" files=".*package-info.java"/>
 </suppressions>

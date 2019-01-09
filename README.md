@@ -1,32 +1,20 @@
 Maven Parent for Java Projects
 -----
-This project holds the core bill of materials for Java projects at Microsoft. Libraries and SDKs can reference these parent POMs to ensure they are up to date with the latest Maven
-plugins and configurations for Maven builds.
+This project holds the core bill of materials for Java projects at Microsoft. Libraries and SDKs can reference these 
+parent POMs to ensure they are up to date with the latest Maven plugins and configurations for Maven builds.
 
-Projects that must be compliant with Java 8 may use the `java-8-parent` POM. Projects that can be compliant with Java 11 may use the `java-11-parent` POM.
+Projects that must be compliant with Java 8 may use the `java-8-parent` POM.
 
 ## Instructions
 
-To configure your Maven project to use these POMs, copy the respective configuration into your core `pom.xml` file (e.g. for multi-module Maven projects, paste this into your main
-`pom.xml`).
-
-### Java 8
+To configure your Maven project to use these POMs, copy the following into your core `pom.xml` file (e.g. for 
+multi-module Maven projects, paste this into your main `pom.xml`):
 
 ```xml
     <parent>
         <groupId>com.microsoft.maven</groupId>
         <artifactId>java-8-parent</artifactId>
-        <version>8.0.0-SNAPSHOT</version>
-    </parent>
-```
-
-### Java 11
-
-```xml
-    <parent>
-        <groupId>com.microsoft.maven</groupId>
-        <artifactId>java-11-parent</artifactId>
-        <version>11.0.0-SNAPSHOT</version>
+        <version>8.0.1-SNAPSHOT</version>
     </parent>
 ```
 
